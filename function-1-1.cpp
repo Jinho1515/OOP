@@ -7,10 +7,8 @@ int array_sum(int array[], int n) {
     return 0;
   }
   for (int i = 0; i < n; i++) {
-    if (array[i] > 1) {
       sum_arr = sum_arr + array[i];
       
-    }
   }
   return sum_arr;
 }
