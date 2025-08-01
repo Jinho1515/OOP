@@ -4,7 +4,7 @@ bool is_fanarray(int array[], int n);
 
 
 int main() {
-    int arr[] = {1,2,4,3,1};
+    int arr[] = {1,2,10,2,1};
     int n = sizeof(arr) / sizeof(arr[0]);
     
 
