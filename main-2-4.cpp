@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int array_min(const int integers[], int length);
-int array_max(const int integers[], int length);
-int sum_min_max(const int integers[], int length);
+int array_min(int integers[], int length);
+int array_max(int integers[], int length);
+int sum_min_max(int integers[], int length);
 
 int main() {
     int arr1[] = {4, 7, 1, 9, 3};

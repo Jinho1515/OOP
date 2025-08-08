@@ -1,6 +1,6 @@
 
 
-bool is_palindrome(const int integers[], int length) {
+bool is_palindrome(int integers[], int length) {
   if (length <= 0) {
     return false;
   }
@@ -13,7 +13,7 @@ bool is_palindrome(const int integers[], int length) {
   return true;
 }
 
-int sum_array_elements(const int integers[], int length) {
+int sum_array_elements(int integers[], int length) {
   if (length <= 0) {
     return -1;
   }
@@ -24,7 +24,7 @@ int sum_array_elements(const int integers[], int length) {
   return sum;
 }
 
-int sum_if_palindrome(const int integers[], int length) {
+int sum_if_palindrome(int integers[], int length) {
   if (length <= 0) {
     return -1;
   }

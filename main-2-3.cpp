@@ -2,9 +2,9 @@
 #include <iostream>
 using namespace std;
 
-bool is_palindrome(const int integers[], int length);
-int  sum_array_elements(const int integers[], int length);
-int  sum_if_palindrome(const int integers[], int length);
+bool is_palindrome(int integers[], int length);
+int  sum_array_elements(int integers[], int length);
+int  sum_if_palindrome(int integers[], int length);
 
 int main() {
     int a1[] = {1, 2, 2, 1}; 

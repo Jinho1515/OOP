@@ -1,7 +1,7 @@
 
 
 
-int array_min(const int integers[], int length) {
+int array_min(int integers[], int length) {
   if (length <= 0) {
     return -1;
   }
@@ -14,7 +14,7 @@ int array_min(const int integers[], int length) {
   return min_value;
 }
 
-int array_max(const int integers[], int length) {
+int array_max(int integers[], int length) {
   if (length <= 0) {
     return -1;
   }
@@ -28,7 +28,7 @@ int array_max(const int integers[], int length) {
 }
 
 
-int sum_min_max(const int integers[], int length) {
+int sum_min_max(int integers[], int length) {
   if (length <= 0) {
     return -1;
   }
