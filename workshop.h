@@ -17,7 +17,7 @@ void printArray(double* a, int n) {
 double arrayMax(double* a, int n) {
   double maxVal = a[0];
   for (int i = 0; i < n; i++) {
-    if (maxVal > a[i]) {
+    if (maxVal < a[i]) {
       maxVal = a[i];
     }
   }
