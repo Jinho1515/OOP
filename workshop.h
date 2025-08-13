@@ -9,7 +9,7 @@ void changeValue(double* p) {
 
 void printArray(double* a, int n) {
   for (int i = 0; i < n; i++) {
-    std::cout << a[i];
+    std::cout << a[i] << ' ';
   }
   std::cout << '\n';
 }
