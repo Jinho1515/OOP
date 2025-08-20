@@ -36,7 +36,7 @@ double* dynamicArray(int N) {
   return arr;
 }
 double* dynamicArray(int N, double M) {
-  if (M <= 0) {
+  if (N <= 0) {
     return nullptr;
   }
   double* arr = new double[N];

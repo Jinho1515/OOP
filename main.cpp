@@ -22,7 +22,7 @@ int main() {
   std::cout << "Before changeValue: d = " << d << "\n";
   changeValue(&d);
   std::cout << "After  changeValue: d = " << d << "\n";
-  return 0;
+
 
   // part 3
   std::cout << "Part 3\n";
