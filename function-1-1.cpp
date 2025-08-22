@@ -1,15 +1,13 @@
-#include <iostream>
+#include "Person.h"
 
-int *readNumbers() {
-    int *arr = new int[10];
-    for (int i = 0; i < 10; ++i) {
-        std::cin >> arr[i];
-    }
-    return arr;
-}
-
-void printNumbers(int *numbers, int length) {
-    for (int i = 0; i < length; ++i) {
-        std::cout << i << ' ' << numbers[i] << '\n';
-    }
+Person* createPersonArray(int n) {
+  if (n <= 0) {
+    return nullptr;
+  }
+  Person* arr = new Person[n];
+  for (int i = 0; i < n; i++) {
+    arr[i].name = "John Doe";
+    arr[i].age = 0;
+  }
+  return arr;
 }
