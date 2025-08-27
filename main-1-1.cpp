@@ -1,17 +1,12 @@
 #include <iostream>
-
-#include "Person.h"
-
-Person* createPersonArray(int n);
+#include "Musician.h"
 
 int main() {
-  int n = 5;
-  Person* people = createPersonArray(n);
+    Musician m1;
+    std::cout << "Default instrument: " << m1.get_instrument() << ", Default experience: " << m1.get_experience() << std::endl;
 
-  for (int i = 0; i < n; ++i) {
-    std::cout << i << ": " << people[i].name << ", age " << people[i].age
-              << '\n';
-  }
+    Musician m2("guitar", 5);
+    std::cout << "Instrument: " << m2.get_instrument() << ", Experience: " << m2.get_experience() << std::endl;
 
-  return 0;
+    return 0;
 }
