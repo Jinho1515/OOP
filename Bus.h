@@ -7,5 +7,4 @@ public:
     explicit Bus(int id);
     int getParkingDuration() const override;
 };
-
-#endif // BUS_H
+#endif

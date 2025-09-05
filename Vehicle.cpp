@@ -8,12 +8,9 @@ Vehicle::Vehicle(int id) {
 
 Vehicle::~Vehicle() {}
 
-int Vehicle::getID() const {
-    return this->ID;
-}
+int Vehicle::getID() const { return this->ID; }
 
 int Vehicle::secondsSinceEntry() const {
     std::time_t now = std::time(nullptr);
-    double diff = std::difftime(now, this->timeOfEntry);
-    return static_cast<int>(diff);
+    return static_cast<int>(std::difftime(now, this->timeOfEntry));
 }

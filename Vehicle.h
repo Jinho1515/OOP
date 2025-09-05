@@ -14,7 +14,6 @@ protected:
 public:
     explicit Vehicle(int id);
     virtual ~Vehicle();
-
     int getID() const;
     virtual int getParkingDuration() const = 0;
 };

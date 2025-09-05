@@ -7,5 +7,4 @@ public:
     explicit Motorbike(int id);
     int getParkingDuration() const override;
 };
-
-#endif // MOTORBIKE_H
+#endif

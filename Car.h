@@ -7,5 +7,4 @@ public:
     explicit Car(int id);
     int getParkingDuration() const override;
 };
-
-#endif // CAR_H
+#endif
