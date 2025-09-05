@@ -5,9 +5,9 @@
 
 class ParkingLot {
 private:
-    Vehicle** vehicles; // dynamic array of Vehicle*  (name required by spec)
-    int capacity;       // max spaces
-    int count;          // current number of vehicles
+    Vehicle** vehicles; // dynamic array of Vehicle*
+    int capacity;
+    int count;
 
 public:
     explicit ParkingLot(int max);
@@ -15,9 +15,11 @@ public:
 
     int getCount() const;
 
-    // Spec: print messages on failure conditions
-    void parkVehicle(Vehicle* v); // prints "The lot is full" if full
-    void unparkVehicle(int id);   // prints "Vehicle not in the lot" if ID absent
+    void parkVehicle(Vehicle* v);  // prints "The lot is full" if full
+    void unparkVehicle(int id);    // prints "Vehicle not in the lot" if absent
+
+    // NEW (Q1-3): number of vehicles with duration > maxParkingDuration (seconds)
+    int countOverstayingVehicles(int maxParkingDuration) const;
 };
 
 #endif // PARKINGLOT_H
