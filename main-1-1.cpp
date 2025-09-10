@@ -1,33 +1,27 @@
 #include <iostream>
-#include "Vehicle.h"
-#include "Car.h"
-#include "Bus.h"
-#include "Motorbike.h"
-
+#include "Appliance.h"
 
 int main() {
-    int n;
-    std::cin >> n;
-    if (n <= 0) return 0;
+    Appliance a1;           // default: 0 W, off
+    Appliance a2(1500);     // 1500 W, off
 
-    Vehicle** lot = new Vehicle*[n](); // zero-init pointers
+    std::cout << "a1: power=" << a1.get_powerRating()
+              << "W, isOn=" << (a1.get_isOn() ? "true" : "false")
+              << ", consumption=" << a1.getPowerConsumption() << "\n";
 
-    for (int i = 0; i < n; i++) {
-        int type, id;
-        std::cin >> type >> id;
+    std::cout << "a2: power=" << a2.get_powerRating()
+              << "W, isOn=" << (a2.get_isOn() ? "true" : "false")
+              << ", consumption=" << a2.getPowerConsumption() << "\n";
 
-        if (type == 1)      lot[i] = new Car(id);
-        else if (type == 2) lot[i] = new Bus(id);
-        else if (type == 3) lot[i] = new Motorbike(id);
-        else                lot[i] = new Car(id); // default
-    }
+    a2.turnOn();
+    std::cout << "a2 after turnOn -> isOn=" << (a2.get_isOn() ? "true" : "false") << "\n";
+    a2.turnOff();
+    std::cout << "a2 after turnOff -> isOn=" << (a2.get_isOn() ? "true" : "false") << "\n";
 
-    for (int i = 0; i < n; i++) {
-        std::cout << lot[i]->getParkingDuration() << "\n";
-    }
-
-    for (int i = 0; i < n; i++) delete lot[i];
-    delete[] lot;
+    a1.set_powerRating(800);
+    a1.set_isOn(true);
+    std::cout << "a1 updated: power=" << a1.get_powerRating()
+              << "W, isOn=" << (a1.get_isOn() ? "true" : "false") << "\n";
 
     return 0;
 }
