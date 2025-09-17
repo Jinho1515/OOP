@@ -12,9 +12,9 @@ public:
                   << "Total: " << total_ << ", Passed: " << (total_ - fails_) 
                   << ", Failed: " << fails_ << std::endl;
         if (fails_ == 0) {
-            std::cout << "ALL TESTS PASSED ✅" << std::endl;
+            std::cout << "ALL TESTS PASSED " << std::endl;
         } else {
-            std::cout << "SOME TESTS FAILED ❌" << std::endl;
+            std::cout << "SOME TESTS FAILED " << std::endl;
         }
     }
 

@@ -21,9 +21,9 @@ public:
                   << "Total: " << total_ << ", Passed: " << (total_ - fails_)
                   << ", Failed: " << fails_ << std::endl;
         if (fails_ == 0) {
-            std::cout << "ALL EQUIVALENCE TESTS PASSED ✅\n";
+            std::cout << "ALL EQUIVALENCE TESTS PASSED \n";
         } else {
-            std::cout << "SOME EQUIVALENCE TESTS FAILED ❌\n";
+            std::cout << "SOME EQUIVALENCE TESTS FAILED \n";
         }
     }
 
